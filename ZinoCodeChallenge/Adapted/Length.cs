@@ -6,21 +6,27 @@ using System.Threading.Tasks;
 
 namespace ZinoCodeChallenge.Adapted
 {
-    public class m : IUnit
+    public class Length
     {
-        public double toBase => 1;
-    }
-    public class mm : IUnit
-    {
-        public double toBase => 0.001;
-    }
-    public class cm : IUnit
-    {
-        public double toBase => 0.01;
-    }
-    public class km : IUnit
-    {
-        public double toBase => 1000;
-    }
+        /// <summary>
+        /// واحد پایه متر
+        /// </summary>
+        public class m : IUnit
+        {
+            public double toBase => 1;
+        }
+        public class mm : IUnit
+        {
+            public double toBase => 0.001;
+        }
+        public class cm : IUnit
+        {
+            public double toBase => 0.01;
+        }
+        public class km : IUnit
+        {
+            public double toBase => 1000;
+        }
 
+    }
 }

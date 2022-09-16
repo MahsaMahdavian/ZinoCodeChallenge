@@ -1,6 +1,7 @@
-﻿using ZinoCodeChallenge.Adapter;
+﻿using ZinoCodeChallenge.Adapted;
+using ZinoCodeChallenge.Adapter;
 
-namespace ZinoCodeChallenge
+namespace ZinoCodeChallenge.Adapter
 {
     public class Adapter<T> where T : IUnit
     {
@@ -12,8 +13,8 @@ namespace ZinoCodeChallenge
 
         public string CalculateUnit()
         {           
-                var a = Convert.ToDecimal(_value);
-                return a.ToString();
+                decimal toDecimal = Convert.ToDecimal(_value);
+                return toDecimal.ToString();
           
         }
       

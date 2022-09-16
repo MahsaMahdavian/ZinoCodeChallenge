@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZinoCodeChallenge
+namespace ZinoCodeChallenge.Adapted
 {
     public class Temperature
     {
@@ -29,7 +29,7 @@ namespace ZinoCodeChallenge
         /// </summary>
         public class F : IUnit
         {
-            public double toBase => 0.001;
+            public double toBase => 0.000;
         }
 
 
