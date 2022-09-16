@@ -8,24 +8,23 @@ namespace ZinoCodeChallenge
 {
     public class Mass
     {
-        public interface IMass : IUnit { }
 
         /// <summary>
         /// واحد پایه گرم
         /// </summary>
-        public class g : IMass
+        public class g : IUnit
         {
             public double toBase => 1; 
         }
-        public class kg : IMass
+        public class kg : IUnit
         {
             public double toBase => 1000;
         }
-        public class ton : IMass
+        public class ton : IUnit
         {
             public double toBase=> 1000000;
         }
-        public class mg : IMass
+        public class mg : IUnit
         {
             public double toBase=> 0.001;
         }
